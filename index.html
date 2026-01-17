@@ -19,6 +19,11 @@
             background: #0a0a0a;
             color: #fff;
             overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        
+        html {
+            scroll-behavior: smooth;
         }
 
         /* Animated background */
@@ -370,6 +375,16 @@
             text-align: center;
             margin: 80px 0;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        
+        .contact-section .certification-badge {
+            position: absolute;
+            left: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            animation: none;
         }
 
         .contact-section h2 {
@@ -445,6 +460,13 @@
             .contact-section {
                 padding: 40px 30px;
             }
+            
+            .contact-section .certification-badge {
+                position: static;
+                transform: none;
+                margin: 20px auto;
+                display: block;
+            }
 
             .dashboard-preview {
                 height: 400px;
@@ -504,14 +526,14 @@
         </section>
 
         <section class="contact-section" id="contact">
+            <div class="certification-badge">
+                <img src="https://heshams.github.io/powerbi-cert.jpg" alt="Microsoft Certified Associate Badge">
+            </div>
             <h2>Contact</h2>
             <p style="font-size: 18px; color: rgba(255,255,255,0.7); margin-bottom: 20px;">
                 Ready to transform your data? Get in touch with us today.
             </p>
             <a href="mailto:hesham@awadconsulting.de" class="email-link">hesham@awadconsulting.de</a>
-            <div class="certification-badge" style="margin-top: 40px;">
-                <img src="https://heshams.github.io/powerbi-cert.jpg" alt="Microsoft Certified Associate Badge">
-            </div>
         </section>
 
         <footer>
