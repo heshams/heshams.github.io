@@ -306,6 +306,87 @@
             margin-top: 80px;
         }
 
+        /* Cookie Consent Banner */
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(26, 26, 46, 0.98);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(230, 126, 34, 0.3);
+            padding: 25px;
+            display: none;
+            z-index: 10000;
+            box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .cookie-consent.show {
+            display: block;
+            animation: slideUp 0.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+        .cookie-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .cookie-text {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 15px;
+            line-height: 1.6;
+            flex: 1;
+        }
+
+        .cookie-text a {
+            color: #e67e22;
+            text-decoration: underline;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .cookie-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .cookie-accept {
+            background: linear-gradient(135deg, #e67e22, #f39c12);
+            color: #fff;
+        }
+
+        .cookie-accept:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(230, 126, 34, 0.4);
+        }
+
+        .cookie-decline {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .cookie-decline:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 36px;
@@ -321,6 +402,20 @@
 
             .consultant-card {
                 padding: 40px 30px;
+            }
+
+            .cookie-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cookie-buttons {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .cookie-btn {
+                width: 100%;
             }
         }
     </style>
@@ -386,5 +481,47 @@
             <p style="margin-top: 10px; font-size: 14px;">Power BI | Salesforce | Data Analytics | CRM Solutions</p>
         </footer>
     </div>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                🍪 We use cookies and Google Analytics to improve your experience and analyze website traffic. By clicking "Accept", you consent to the collection and processing of your data in accordance with our privacy practices.
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accept</button>
+                <button class="cookie-btn cookie-decline" onclick="declineCookies()">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cookie Consent Management
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieConsent').classList.remove('show');
+            
+            // Initialize Google Analytics
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MEBE8YFJSH');
+        }
+
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieConsent').classList.remove('show');
+        }
+
+        // Show cookie banner if user hasn't made a choice
+        window.addEventListener('load', function() {
+            const consent = localStorage.getItem('cookieConsent');
+            if (!consent) {
+                setTimeout(function() {
+                    document.getElementById('cookieConsent').classList.add('show');
+                }, 1000);
+            }
+        });
+    </script>
 </body>
 </html>
