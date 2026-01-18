@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Consulting Germany, UAE, Saudi Arabia | CRM & AI Solutions - Mohammad Iqbal</title>
+    <meta name="description" content="Expert Salesforce consultant serving EMEA region. Certified Salesforce Admin & Agentforce Specialist offering CRM implementation, AI automation, Data Cloud integration, and enterprise solutions for companies across Europe and the Middle East.">
+    <meta name="keywords" content="Salesforce consultant, Salesforce Germany, Salesforce UAE, Salesforce Saudi Arabia, CRM Solutions, Agentforce, AI automation, Salesforce Data Cloud, Sales Cloud, Service Cloud, Salesforce Dubai, Salesforce Riyadh, Enterprise CRM">
+    <meta name="author" content="Mohammad Iqbal">
+    <meta name="geo.region" content="DE-NW">
+    <meta name="geo.placename" content="Paderborn">
+    <meta name="geo.position" content="51.7189;8.7575">
+    <meta name="ICBM" content="51.7189, 8.7575">
+    
+    <meta property="og:title" content="Salesforce Consulting - Mohammad Iqbal">
+    <meta property="og:description" content="Certified Salesforce consultant specializing in CRM implementation, AI automation, and enterprise solutions in Germany and MENA region.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Mohammad Iqbal Salesforce Consulting",
+      "description": "Salesforce CRM and AI Automation Consulting Services",
+      "url": "https://www.awadconsulting.de/salesforce",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paderborn",
+        "addressRegion": "North Rhine-Westphalia",
+        "addressCountry": "DE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.7189",
+        "longitude": "8.7575"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "North Rhine-Westphalia"
+      },
+      "serviceType": ["Salesforce Consulting", "CRM Implementation", "AI Automation", "Agentforce Development", "Data Cloud Integration"],
+      "priceRange": "$",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "Certified Salesforce Administrator"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "Agentforce Specialist"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "AI Associate"
+        }
+      ]
+    }
+    </script>
+    <meta name="robots" content="index, follow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        }
+
+        .bg-animation::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 161, 224, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: moveBackground 20s linear infinite;
+        }
+
+        .bg-animation::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Cg opacity='0.03' fill='%2300a1e0'%3E%3Ccircle cx='200' cy='200' r='120' stroke='%2300a1e0' stroke-width='3' fill='none'/%3E%3Ccircle cx='200' cy='200' r='80' stroke='%2300a1e0' stroke-width='2' fill='none'/%3E%3Cpath d='M800,200 L850,250 L900,200 L850,150 Z' stroke='%2300a1e0' stroke-width='2' fill='none'/%3E%3Crect x='500' y='500' width='200' height='150' rx='10' stroke='%2300a1e0' stroke-width='2' fill='none'/%3E%3Ctext x='100' y='600' font-size='60' font-weight='bold'%3EAI%3C/text%3E%3Cpath d='M950,500 Q1000,450 1050,500 T1150,500' stroke='%2300a1e0' stroke-width='3' fill='none'/%3E%3C/g%3E%3C/svg%3E");
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1;
+            animation: fadeKPI 8s ease-in-out infinite;
+        }
+
+        @keyframes fadeKPI {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .particle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: rgba(0, 161, 224, 0.5);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: float 15s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px 50px;
+            border-radius: 20px;
+            margin: 20px 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: slideDown 0.8s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #00a1e0, #0096d6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #00a1e0, #0096d6);
+            transition: width 0.3s;
+        }
+
+        nav a:hover {
+            color: #00a1e0;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px 20px 20px;
+            position: relative;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 800;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #fff 0%, #00a1e0 50%, #0096d6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.2); }
+        }
+
+        .hero p {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #00a1e0, #0096d6);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.4s;
+            box-shadow: 0 10px 40px rgba(0, 161, 224, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(0, 161, 224, 0.6);
+        }
+
+        .services-section {
+            margin: 20px 0 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, #fff, #00a1e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 50px;
+            border-radius: 25px;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 161, 224, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(0, 161, 224, 0.5);
+            box-shadow: 0 20px 60px rgba(0, 161, 224, 0.3);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #00a1e0, #0096d6);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0, 161, 224, 0.4);
+        }
+
+        .service-card h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .service-card p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .contact-section {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 60px;
+            border-radius: 25px;
+            text-align: center;
+            margin: 80px 0;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-section h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #fff, #00a1e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .email-link {
+            display: inline-block;
+            padding: 18px 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(0, 161, 224, 0.5);
+            color: #00a1e0;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .email-link:hover {
+            background: linear-gradient(135deg, #00a1e0, #0096d6);
+            color: #fff;
+            border-color: transparent;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 80px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+                padding: 30px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .contact-section {
+                padding: 40px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">Mohammad Iqbal Consulting</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Salesforce & AI Automation Consulting</h1>
+            <p>Helping enterprises in Germany, UAE, and Saudi Arabia optimize CRM, automate processes, and leverage AI for exceptional customer experiences.</p>
+            <a href="#contact" class="cta-button">Request a Consultation</a>
+        </section>
+
+        <section class="services-section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div style="max-width: 900px; margin: 0 auto; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 50px; border-radius: 25px;">
+                <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.8; font-size: 18px; margin-bottom: 30px;">
+                    As a Certified Salesforce Administrator, Agentforce Specialist, and AI Associate, I bring over 10 years of hands-on experience managing enterprise-scale application ecosystems for Fortune 500-level enterprises and fast-scaling eCommerce firms.
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.8; font-size: 18px; margin-bottom: 30px;">
+                    I specialize in creating intelligent Agents, Flows, Topics, and Actions using Agent Builder and Prompt Builder to optimize Customer Care, ticket management, and support processes. My expertise includes leveraging Salesforce Data Cloud for integrating and deploying AI agents across internal systems and external websites, driving automation, efficiency, and compliance (GDPR & ISO/IEC 27001).
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.8; font-size: 18px; margin-bottom: 30px;">
+                    With a strong track record in leading IT support operations, automation, and stakeholder collaboration across cross-cultural teams, I deliver enterprise solutions that transform how businesses operate and serve their customers across Europe and the Middle East.
+                </p>
+                <div style="background: rgba(0, 161, 224, 0.1); border-left: 4px solid #00a1e0; padding: 25px; border-radius: 10px; margin-top: 30px;">
+                    <h3 style="color: #00a1e0; font-size: 20px; margin-bottom: 15px; font-weight: 600;">Certifications & Expertise</h3>
+                    <ul style="color: rgba(255, 255, 255, 0.85); line-height: 2; font-size: 16px; list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 10px;">✓ Certified Salesforce Administrator</li>
+                        <li style="margin-bottom: 10px;">✓ Agentforce Specialist</li>
+                        <li style="margin-bottom: 10px;">✓ AI Associate</li>
+                        <li>✓ GDPR & ISO/IEC 27001 Compliance Expert</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Salesforce CRM Implementation</h3>
+                    <p>Complete Salesforce implementation and customization for enterprises. From initial setup to advanced configuration, we deliver tailored CRM solutions that align with your business processes and drive growth across Sales Cloud, Service Cloud, and beyond.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI Agent Development & Automation</h3>
+                    <p>Expert development of intelligent AI agents using Agentforce, Agent Builder, and Prompt Builder. We create automated workflows, Topics, and Actions that optimize customer care, streamline ticket management, and enhance support processes with cutting-edge AI capabilities.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>Data Cloud Integration</h3>
+                    <p>Seamless integration of Salesforce Data Cloud with your internal systems and external platforms. We deploy AI agents across your entire digital ecosystem, ensuring unified data management and intelligent automation that drives efficiency and compliance.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Enterprise Support & Optimization</h3>
+                    <p>Ongoing IT support operations, system optimization, and stakeholder collaboration for Fortune 500-level enterprises. We ensure your Salesforce ecosystem remains efficient, compliant (GDPR & ISO/IEC 27001), and continuously aligned with evolving business needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Contact</h2>
+            <p style="font-size: 18px; color: rgba(255,255,255,0.7); margin-bottom: 20px;">
+                Ready to transform your CRM and automate your processes? Get in touch today.
+            </p>
+            <a href="mailto:mohammad@awadconsulting.de" class="email-link">mohammad@awadconsulting.de</a>
+        </section>
+
+        <footer>
+            <p>© 2026 Mohammad Iqbal Consulting · Paderborn, Germany | Serving UAE & Saudi Arabia</p>
+            <p style="margin-top: 10px; font-size: 14px;">Salesforce Consultant | AI Automation | Agentforce | CRM Solutions | Data Cloud</p>
+        </footer>
+    </div>
+
+    <script>
+        for (let i = 0; i < 15; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            document.body.appendChild(particle);
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
