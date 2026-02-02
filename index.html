@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power BI Consulting Paderborn | Salesforce Munich | Awad Consulting</title>
-    <meta name="description" content="Power BI consulting in Paderborn and Salesforce consulting in Munich. Microsoft-certified Data Analyst for Custom Dashboards, DAX Modeling and CRM solutions in Germany.">
-    <meta name="keywords" content="Power BI Paderborn, Power BI Consulting Paderborn, Salesforce Munich, Salesforce Consulting Munich, Data Analytics Paderborn, Business Intelligence">
+    <title>Power BI Beratung Paderborn | Salesforce München | Awad Consulting</title>
+    <meta name="description" content="Power BI Beratung in Paderborn und Salesforce Beratung in München. Microsoft-zertifizierter Data Analyst für Custom Dashboards, DAX Modeling und CRM-Lösungen in Deutschland.">
+    <meta name="keywords" content="Power BI Paderborn, Power BI Beratung Paderborn, Salesforce München, Salesforce Beratung München, Data Analytics Paderborn, Business Intelligence">
     <meta name="author" content="Awad Consulting">
     
-    <!-- Open Graph Tags for Social Sharing -->
-    <meta property="og:title" content="Power BI Consulting Paderborn | Awad Consulting">
-    <meta property="og:description" content="Professional Power BI and Salesforce consulting in Paderborn. Experts for Data Analytics and CRM solutions.">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Power BI Beratung Paderborn | Awad Consulting">
+    <meta property="og:description" content="Professionelle Power BI und Salesforce Beratung in Paderborn und München.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.awadconsulting.de">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.awadconsulting.de">
+    
+    <!-- Alternate Language Links -->
+    <link rel="alternate" hreflang="de" href="https://www.awadconsulting.de" />
+    <link rel="alternate" hreflang="en" href="https://www.awadconsulting.de/en" />
+    <link rel="alternate" hreflang="x-default" href="https://www.awadconsulting.de" />
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -23,14 +28,14 @@
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Awad Consulting",
-      "description": "Power BI and Salesforce consulting in Paderborn",
+      "description": "Power BI und Salesforce Beratung in Paderborn und München",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Paderborn, Munich",
-        "addressRegion": "NRW, Bavaria",
+        "addressLocality": "Paderborn, München",
+        "addressRegion": "NRW, Bayern",
         "addressCountry": "DE"
       },
-      "areaServed": ["Paderborn", "Munich", "Germany", "UAE", "Saudi Arabia"],
+      "areaServed": ["Paderborn", "München", "Germany", "UAE", "Saudi Arabia"],
       "priceRange": "$$",
       "url": "https://www.awadconsulting.de",
       "serviceType": ["Power BI Consulting", "Salesforce Consulting", "Data Analytics", "Business Intelligence"],
@@ -56,7 +61,7 @@
             "@type": "Place",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Munich",
+              "addressLocality": "München",
               "addressCountry": "DE"
             }
           }
@@ -114,6 +119,47 @@
             padding: 20px;
             position: relative;
             z-index: 1;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            padding: 8px;
+            display: flex;
+            gap: 5px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .lang-btn {
+            padding: 10px 20px;
+            border: none;
+            background: transparent;
+            color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, #e67e22, #f39c12);
+            color: #fff;
         }
 
         header {
@@ -458,6 +504,15 @@
             background: rgba(255, 255, 255, 0.15);
         }
 
+        /* Hide/Show language content */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 36px;
@@ -488,74 +543,166 @@
             .cookie-btn {
                 width: 100%;
             }
+
+            .language-switcher {
+                top: 10px;
+                right: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="bg-animation"></div>
 
-    <div class="container">
-        <header>
-            <div class="logo">Awad Consulting</div>
-            <div class="tagline">Power BI Experts in Paderborn & Salesforce Consulting Munich</div>
-        </header>
-
-        <section class="hero">
-            <div class="location-badge">📍 Paderborn | Munich | Germany</div>
-            <h1>Power BI & Salesforce Consulting in Germany</h1>
-            <p>Professional Power BI Data Analytics in Paderborn and Salesforce CRM solutions in Munich for companies in Germany, UAE and Saudi Arabia. Microsoft-certified experts with years of experience.</p>
-        </section>
-
-        <div class="consultants-grid">
-            <div class="consultant-card">
-                <div class="consultant-icon">📊</div>
-                <h2>Power BI Consulting Paderborn</h2>
-                <h3>Hesham Awad</h3>
-                <p>Microsoft Certified Power BI Data Analyst with over 4 years of experience transforming complex data into actionable insights. Your expert for Power BI in Paderborn and surrounding areas.</p>
-                
-                <div class="specialties">
-                    <h4>Services</h4>
-                    <ul>
-                        <li>Custom KPI Dashboard Development</li>
-                        <li>Advanced DAX & Data Modeling</li>
-                        <li>ETL Process Design</li>
-                        <li>SAP Analytics Cloud Integration</li>
-                        <li>Business Intelligence Solutions Paderborn</li>
-                    </ul>
-                </div>
-                
-                <a href="powerbi.html" class="cta-button">View Power BI Services →</a>
-            </div>
-
-            <div class="consultant-card salesforce-card">
-                <div class="consultant-icon salesforce-icon">☁️</div>
-                <h2>Salesforce Consulting Munich</h2>
-                <h3>Mohammad Iqbal</h3>
-                <p>Certified Salesforce Administrator, Agentforce Specialist and AI Associate with over 10 years of experience in enterprise CRM solutions and AI automation. Located in Munich.</p>
-                
-                <div class="specialties salesforce-specialties">
-                    <h4>Services</h4>
-                    <ul>
-                        <li>Salesforce CRM Implementation</li>
-                        <li>AI Agent Development & Agentforce</li>
-                        <li>Data Cloud Integration</li>
-                        <li>Enterprise Support & Automation</li>
-                        <li>GDPR & ISO/IEC 27001 Compliance</li>
-                    </ul>
-                </div>
-                
-                <a href="salesforce.html" class="cta-button salesforce-button">View Salesforce Services →</a>
-            </div>
-        </div>
-
-        <footer>
-            <p>© 2026 Awad Consulting · Power BI Consulting Paderborn | Salesforce Consulting Munich</p>
-            <p style="margin-top: 10px; font-size: 14px;">Power BI Paderborn | Salesforce Munich | Data Analytics | CRM Solutions | Business Intelligence</p>
-        </footer>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('de')" id="btn-de">
+            🇩🇪 DE
+        </button>
+        <button class="lang-btn" onclick="switchLanguage('en')" id="btn-en">
+            🇬🇧 EN
+        </button>
     </div>
 
-    <!-- Cookie Consent Banner -->
-    <div class="cookie-consent" id="cookieConsent">
+    <div class="container">
+        <!-- German Content -->
+        <div class="lang-content active" id="content-de">
+            <header>
+                <div class="logo">Awad Consulting</div>
+                <div class="tagline">Power BI Experten in Paderborn & Salesforce Beratung München</div>
+            </header>
+
+            <section class="hero">
+                <div class="location-badge">📍 Paderborn | München | Deutschland</div>
+                <h1>Power BI & Salesforce Beratung in Deutschland</h1>
+                <p>Professionelle Power BI Data Analytics in Paderborn und Salesforce CRM Lösungen in München für Unternehmen in Deutschland, UAE und Saudi Arabien. Microsoft-zertifizierte Experten mit langjähriger Erfahrung.</p>
+            </section>
+
+            <div class="consultants-grid">
+                <div class="consultant-card">
+                    <div class="consultant-icon">📊</div>
+                    <h2>Power BI Beratung Paderborn</h2>
+                    <h3>Hesham Awad</h3>
+                    <p>Microsoft Certified Power BI Data Analyst mit über 4 Jahren Erfahrung in der Transformation komplexer Daten in umsetzbare Erkenntnisse. Ihr Experte für Power BI in Paderborn und Umgebung.</p>
+                    
+                    <div class="specialties">
+                        <h4>Leistungen</h4>
+                        <ul>
+                            <li>Custom KPI Dashboard Entwicklung</li>
+                            <li>Advanced DAX & Data Modeling</li>
+                            <li>ETL Process Design</li>
+                            <li>SAP Analytics Cloud Integration</li>
+                            <li>Business Intelligence Lösungen Paderborn</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="powerbi.html" class="cta-button">Power BI Services ansehen →</a>
+                </div>
+
+                <div class="consultant-card salesforce-card">
+                    <div class="consultant-icon salesforce-icon">☁️</div>
+                    <h2>Salesforce Beratung München</h2>
+                    <h3>Mohammad Iqbal</h3>
+                    <p>Certified Salesforce Administrator, Agentforce Specialist und AI Associate mit über 10 Jahren Erfahrung in Enterprise CRM-Lösungen und KI-Automatisierung. Standort München.</p>
+                    
+                    <div class="specialties salesforce-specialties">
+                        <h4>Leistungen</h4>
+                        <ul>
+                            <li>Salesforce CRM Implementierung</li>
+                            <li>AI Agent Entwicklung & Agentforce</li>
+                            <li>Data Cloud Integration</li>
+                            <li>Enterprise Support & Automation</li>
+                            <li>GDPR & ISO/IEC 27001 Compliance</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="salesforce.html" class="cta-button salesforce-button">Salesforce Services ansehen →</a>
+                </div>
+            </div>
+
+            <footer>
+                <p>© 2026 Awad Consulting · Power BI Beratung Paderborn | Salesforce Beratung München</p>
+                <p style="margin-top: 10px; font-size: 14px;">Power BI Paderborn | Salesforce München | Data Analytics | CRM Solutions | Business Intelligence</p>
+            </footer>
+        </div>
+
+        <!-- English Content -->
+        <div class="lang-content" id="content-en">
+            <header>
+                <div class="logo">Awad Consulting</div>
+                <div class="tagline">Power BI Experts in Paderborn & Salesforce Consulting Munich</div>
+            </header>
+
+            <section class="hero">
+                <div class="location-badge">📍 Paderborn | Munich | Germany</div>
+                <h1>Power BI & Salesforce Consulting in Germany</h1>
+                <p>Professional Power BI Data Analytics in Paderborn and Salesforce CRM solutions in Munich for companies in Germany, UAE and Saudi Arabia. Microsoft-certified experts with years of experience.</p>
+            </section>
+
+            <div class="consultants-grid">
+                <div class="consultant-card">
+                    <div class="consultant-icon">📊</div>
+                    <h2>Power BI Consulting Paderborn</h2>
+                    <h3>Hesham Awad</h3>
+                    <p>Microsoft Certified Power BI Data Analyst with over 4 years of experience transforming complex data into actionable insights. Your expert for Power BI in Paderborn and surrounding areas.</p>
+                    
+                    <div class="specialties">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Custom KPI Dashboard Development</li>
+                            <li>Advanced DAX & Data Modeling</li>
+                            <li>ETL Process Design</li>
+                            <li>SAP Analytics Cloud Integration</li>
+                            <li>Business Intelligence Solutions Paderborn</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="powerbi.html" class="cta-button">View Power BI Services →</a>
+                </div>
+
+                <div class="consultant-card salesforce-card">
+                    <div class="consultant-icon salesforce-icon">☁️</div>
+                    <h2>Salesforce Consulting Munich</h2>
+                    <h3>Mohammad Iqbal</h3>
+                    <p>Certified Salesforce Administrator, Agentforce Specialist and AI Associate with over 10 years of experience in enterprise CRM solutions and AI automation. Located in Munich.</p>
+                    
+                    <div class="specialties salesforce-specialties">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Salesforce CRM Implementation</li>
+                            <li>AI Agent Development & Agentforce</li>
+                            <li>Data Cloud Integration</li>
+                            <li>Enterprise Support & Automation</li>
+                            <li>GDPR & ISO/IEC 27001 Compliance</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="salesforce.html" class="cta-button salesforce-button">View Salesforce Services →</a>
+                </div>
+            </div>
+
+            <footer>
+                <p>© 2026 Awad Consulting · Power BI Consulting Paderborn | Salesforce Consulting Munich</p>
+                <p style="margin-top: 10px; font-size: 14px;">Power BI Paderborn | Salesforce Munich | Data Analytics | CRM Solutions | Business Intelligence</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner (German) -->
+    <div class="cookie-consent" id="cookieConsent-de">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                🍪 Wir verwenden Cookies und Google Analytics, um Ihre Erfahrung zu verbessern und den Website-Traffic zu analysieren. Durch Klicken auf "Akzeptieren" stimmen Sie der Erfassung und Verarbeitung Ihrer Daten gemäß unseren Datenschutzrichtlinien zu.
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Akzeptieren</button>
+                <button class="cookie-btn cookie-decline" onclick="declineCookies()">Ablehnen</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner (English) -->
+    <div class="cookie-consent" id="cookieConsent-en">
         <div class="cookie-content">
             <div class="cookie-text">
                 🍪 We use cookies and Google Analytics to improve your experience and analyze website traffic. By clicking "Accept" you consent to the collection and processing of your data in accordance with our privacy policy.
@@ -568,10 +715,58 @@
     </div>
 
     <script>
+        // Language Switcher
+        function switchLanguage(lang) {
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active from all buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+            
+            // Update HTML lang attribute for SEO
+            document.documentElement.lang = lang;
+            
+            // Save preference
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update page title and meta description
+            if (lang === 'de') {
+                document.title = 'Power BI Beratung Paderborn | Salesforce München | Awad Consulting';
+                document.querySelector('meta[name="description"]').content = 'Power BI Beratung in Paderborn und Salesforce Beratung in München. Microsoft-zertifizierter Data Analyst für Custom Dashboards, DAX Modeling und CRM-Lösungen in Deutschland.';
+            } else {
+                document.title = 'Power BI Consulting Paderborn | Salesforce Munich | Awad Consulting';
+                document.querySelector('meta[name="description"]').content = 'Power BI consulting in Paderborn and Salesforce consulting in Munich. Microsoft-certified Data Analyst for Custom Dashboards, DAX Modeling and CRM solutions in Germany.';
+            }
+        }
+
+        // Load preferred language on page load
+        window.addEventListener('load', function() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'de';
+            switchLanguage(savedLang);
+            
+            // Show cookie banner
+            const consent = localStorage.getItem('cookieConsent');
+            if (!consent) {
+                setTimeout(function() {
+                    const cookieBanner = savedLang === 'de' ? 'cookieConsent-de' : 'cookieConsent-en';
+                    document.getElementById(cookieBanner).classList.add('show');
+                }, 1000);
+            }
+        });
+
         // Cookie Consent Management
         function acceptCookies() {
             localStorage.setItem('cookieConsent', 'accepted');
-            document.getElementById('cookieConsent').classList.remove('show');
+            document.getElementById('cookieConsent-de').classList.remove('show');
+            document.getElementById('cookieConsent-en').classList.remove('show');
             
             // Initialize Google Analytics
             window.dataLayer = window.dataLayer || [];
@@ -582,18 +777,9 @@
 
         function declineCookies() {
             localStorage.setItem('cookieConsent', 'declined');
-            document.getElementById('cookieConsent').classList.remove('show');
+            document.getElementById('cookieConsent-de').classList.remove('show');
+            document.getElementById('cookieConsent-en').classList.remove('show');
         }
-
-        // Show cookie banner if user hasn't made a choice
-        window.addEventListener('load', function() {
-            const consent = localStorage.getItem('cookieConsent');
-            if (!consent) {
-                setTimeout(function() {
-                    document.getElementById('cookieConsent').classList.add('show');
-                }, 1000);
-            }
-        });
     </script>
 </body>
 </html>
