@@ -1,4 +1,28 @@
+# robots.txt for awadconsulting.de
+# This file tells search engines which pages they can and cannot crawl
+
 User-agent: *
 Allow: /
 
+# Disallow common admin and system directories (if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /test/
+Disallow: /_private/
+
+# Allow all CSS, JS, and image files
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+# Sitemap location
 Sitemap: https://www.awadconsulting.de/sitemap.xml
+
+# Crawl-delay (optional - helps prevent server overload)
+# Uncomment if you experience heavy bot traffic
+# Crawl-delay: 1
