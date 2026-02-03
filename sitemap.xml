@@ -1,21 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.awadconsulting.de/</loc>
-    <lastmod>2026-01-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.awadconsulting.de/powerbi.html</loc>
-    <lastmod>2026-01-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.awadconsulting.de/salesforce.html</loc>
-    <lastmod>2026-01-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Homepage (German) -->
+    <url>
+        <loc>https://www.awadconsulting.de/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.awadconsulting.de/en"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.awadconsulting.de/"/>
+    </url>
+    
+    <!-- Homepage (English) -->
+    <url>
+        <loc>https://www.awadconsulting.de/en</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.awadconsulting.de/en"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.awadconsulting.de/"/>
+    </url>
+    
+    <!-- Power BI Service Page -->
+    <url>
+        <loc>https://www.awadconsulting.de/powerbi.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Salesforce Service Page -->
+    <url>
+        <loc>https://www.awadconsulting.de/salesforce.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Add more pages as you create them:
+    
+    <url>
+        <loc>https://www.awadconsulting.de/kontakt.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.awadconsulting.de/datenschutz.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.awadconsulting.de/impressum.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    -->
+    
 </urlset>
